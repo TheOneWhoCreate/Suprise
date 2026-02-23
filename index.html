@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="theme-color" content="#ffb3c6" />
+    <title>Happy Birthday! 💖</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="card">
+      <div id="confetti-wrapper"></div>
+      <div class="wish">
+        <p>Happy Birthday!</p>
+        <p class="message">
+          Happy Birthday to Madam Ji. You make my life brighter just by being in
+          it, and I honestly don't know what I'd do without you. Thank you for
+          always being there, for the laughs, the support, and the love. I hope
+          this year brings you happiness, success, and everything you deserve.
+          You're the sweetest person I know!
+        </p>
+      </div>
+
+      <div class="slider-container">
+        <div class="slides" id="slides">
+          <img src="pic1.png" alt="Birthday 1" loading="lazy" />
+          <img src="pic2.png" alt="Birthday 2" loading="lazy" />
+          <img src="pic3.png" alt="Birthday 3" loading="lazy" />
+          <img src="pic4.png" alt="Birthday 4" loading="lazy" />
+          <img src="pic5.png" alt="Birthday 5" loading="lazy" />
+          <img src="pic6.png" alt="Birthday 6" loading="lazy" />
+          <img src="pic7.png" alt="Birthday 7" loading="lazy" />
+          <img src="pic8.png" alt="Birthday 8" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="dots" id="dots"></div>
+
+      <div class="music-control">
+        <button id="musicBtn" aria-label="Play background music">
+          ▶ Play Music
+        </button>
+        <audio id="bgMusic" src="music.mp3" preload="none"></audio>
+      </div>
+    </div>
+    
+    <script src="script.js" defer></script>
+  </body>
+</html>
