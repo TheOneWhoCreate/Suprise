@@ -1,52 +1,77 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <meta name="theme-color" content="#ffb3c6" />
-    <title>Happy Birthday! 💖</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div class="card">
-      <div id="confetti-wrapper"></div>
-      <div class="wish">
-        <p>Happy Birthday!</p>
-        <p class="message">
-          Happy Birthday Shreya ji. You make everyone's life brighter just by being in
-          it. Thank you for always being there, for the laughs, the support. I hope
-          this year brings you happiness, success, and everything you deserve. 
-          You're the kindest, prettiest and sweetest person I know!
-        </p>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="theme-color" content="#ffb3c6" />
 
-      <div class="slider-container">
-        <div class="slides" id="slides">
-          <img src="pic1.png" alt="Birthday 1" loading="lazy" />
-          <img src="pic2.png" alt="Birthday 2" loading="lazy" />
-          <img src="pic3.png" alt="Birthday 3" loading="lazy" />
-          <img src="pic4.png" alt="Birthday 4" loading="lazy" />
-          <img src="pic5.png" alt="Birthday 5" loading="lazy" />
-          <img src="pic6.png" alt="Birthday 6" loading="lazy" />
-          <img src="pic7.png" alt="Birthday 7" loading="lazy" />
-          <img src="pic8.png" alt="Birthday 8" loading="lazy" />
-        </div>
-      </div>
+  <title>Happy Birthday! 💖</title>
 
-      <div class="dots" id="dots"></div>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      <div class="music-control">
-        <button id="musicBtn" aria-label="Play background music">
-          ▶ Play Music
-        </button>
-        <audio id="bgMusic" src="music.mp3" preload="none"></audio>
+<body>
+  <div class="card">
+    <div id="confetti-wrapper"></div>
+
+    <div class="wish">
+      <p>Happy Birthday!</p>
+
+      <p class="message">
+        Happy Birthday Shreya ji. You make everyone's life brighter just by
+        being in it. Thank you for always being there, for the laughs, the
+        support. I hope this year brings you happiness, success, and
+        everything you deserve. You're the kindest, prettiest and sweetest
+        person I know!
+      </p>
+    </div>
+
+    <div class="slider-container">
+      <div class="slides" id="slides">
+        <img src="pic1.png" alt="Birthday 1" loading="lazy" />
+        <img src="pic2.png" alt="Birthday 2" loading="lazy" />
+        <img src="pic3.png" alt="Birthday 3" loading="lazy" />
+        <img src="pic4.png" alt="Birthday 4" loading="lazy" />
+        <img src="pic5.png" alt="Birthday 5" loading="lazy" />
+        <img src="pic6.png" alt="Birthday 6" loading="lazy" />
+        <img src="pic7.png" alt="Birthday 7" loading="lazy" />
+        <img src="pic8.png" alt="Birthday 8" loading="lazy" />
       </div>
     </div>
-    
-    <script src="script.js" defer></script>
-  </body>
+
+    <div class="dots" id="dots"></div>
+
+    <div class="music-control">
+      <button id="musicBtn" aria-label="Play background music">
+        ▶ Play Music
+      </button>
+
+      <audio id="bgMusic" src="music.mp3" preload="none"></audio>
+    </div>
+
+    <!-- POEM BUTTON -->
+    <button class="poemBtn" onclick="openPoem()">📜 A Poem For You</button>
+  </div>
+
+  <!-- POEM PAGE -->
+
+  <div id="poemPage" class="poemPage">
+    <div class="poemCard">
+      <h2>A Poem For You</h2>
+
+      <p class="poemText">
+        I carry your heart with me (I carry it in my heart) I am never without
+        it (anywhere I go you go, my dear)
+      </p>
+
+      <p class="poemAuthor">— E. E. Cummings</p>
+
+      <button onclick="closePoem()">Back</button>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+
 </html>

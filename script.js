@@ -114,7 +114,7 @@ function typeWriter() {
     const messageElement = document.querySelector('.message');
     const originalText = messageElement.textContent;
     messageElement.textContent = '';
-    
+
     let i = 0;
     function type() {
         if (i < originalText.length) {
@@ -124,6 +124,14 @@ function typeWriter() {
         }
     }
     type();
+}
+
+function openPoem() {
+    document.getElementById("poemPage").style.display = "flex";
+}
+
+function closePoem() {
+    document.getElementById("poemPage").style.display = "none";
 }
 
 // Create confetti periodically

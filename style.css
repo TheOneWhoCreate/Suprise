@@ -196,6 +196,52 @@ body {
 }
 
 /* =========================
+   POEM BUTTON & PAGE
+   ========================= */
+
+.poemBtn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #7a5cff;
+  color: white;
+  cursor: pointer;
+}
+
+.poemPage {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(145deg, #0f0b1f, #2a1a4a, #6b4fb3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.poemCard {
+  width: 90%;
+  max-width: 500px;
+  padding: 40px;
+  background: rgba(35, 25, 60, 0.9);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(120, 80, 255, 0.4);
+}
+
+.poemText {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #e6dcff;
+}
+
+.poemAuthor {
+  margin-top: 20px;
+  color: #b8a7ff;
+  font-style: italic;
+}
+
+/* =========================
    CONFETTI - WILL USE PINKISH PALETTE FROM JS
    ========================= */
 
