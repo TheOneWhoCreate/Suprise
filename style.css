@@ -203,10 +203,17 @@ body {
   margin-top: 15px;
   padding: 10px 20px;
   border: none;
-  border-radius: 20px;
-  background: #7a5cff;
+  border-radius: 25px;
+  background: linear-gradient(145deg, #6b4fb3, #a18cff);
   color: white;
+  font-weight: 600;
   cursor: pointer;
+  box-shadow: 0 6px 15px rgba(120, 80, 255, 0.5);
+  transition: 0.2s;
+}
+
+.poemBtn:hover {
+  transform: scale(1.05);
 }
 
 .poemPage {
@@ -216,29 +223,67 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
+  padding: 20px;
   z-index: 2000;
 }
 
 .poemCard {
-  width: 90%;
+  width: 100%;
   max-width: 500px;
-  padding: 40px;
+  padding: 35px;
   background: rgba(35, 25, 60, 0.9);
   border-radius: 20px;
   text-align: center;
   box-shadow: 0 20px 60px rgba(120, 80, 255, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.poemCard h2 {
+  color: #d9ccff;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
 }
 
 .poemText {
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #e6dcff;
+  color: #f1ecff;
 }
 
 .poemAuthor {
   margin-top: 20px;
   color: #b8a7ff;
   font-style: italic;
+  font-size: 1rem;
+}
+
+.poemCard button {
+  margin-top: 25px;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 20px;
+  background: #7a5cff;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .poemCard {
+    padding: 25px;
+  }
+
+  .poemCard h2 {
+    font-size: 1.5rem;
+  }
+
+  .poemText {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .poemAuthor {
+    font-size: 0.9rem;
+  }
 }
 
 /* =========================
