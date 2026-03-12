@@ -39,12 +39,10 @@ function createDots() {
 
 // ---------- PINKISH COLOR PALETTES ----------
 const palettes = {
-    blush: ["#ffb3c6", "#ffd1e6", "#ff9eb5", "#ff8da1", "#ff6b8a", "#ff4d6d"],
-    rose: ["#ffe4e1", "#ffd9e8", "#fbb1c0", "#f883a0", "#f65b7c", "#e63e6b"],
-    cottonCandy: ["#ffd0e4", "#ffc0cb", "#ffb3d1", "#ffa5c3", "#ff96b5", "#ff88a7"],
-    bubblegum: ["#ffb3ba", "#ffdfb3", "#ffffb3", "#b3ffb3", "#b3ffff", "#ffb3ff"],
-    magenta: ["#ff77a9", "#ff5e8b", "#ff4477", "#ff2b63", "#ff114f", "#ff003b"],
-    cherry: ["#ffb7c5", "#ff9eb2", "#ff859f", "#ff6c8c", "#ff5379", "#ff3a66"]
+    purple: ["#c6b7ff", "#a18cff", "#7a5cff", "#5a3fd6", "#e6dcff", "#b8a7ff"],
+    lavender: ["#e6dcff", "#d4c6ff", "#b8a7ff", "#a18cff", "#8e75ff", "#7a5cff"],
+    violetNight: ["#c6b7ff", "#a18cff", "#7a5cff", "#5a3fd6", "#4b2fbf", "#3b2499"],
+    midnightPurple: ["#e6dcff", "#c6b7ff", "#a18cff", "#7a5cff", "#4c3fb3", "#2a1a4a"]
 };
 
 const paletteNames = Object.keys(palettes);
